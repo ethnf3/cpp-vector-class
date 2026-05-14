@@ -1,23 +1,15 @@
 # Vector\<T\>
 
-My own implementation of a dynamic array in C++ — a university OOP assignment 
+My own implementation of a dynamic array in C++ — a university OOP assignment.  
 Basically a hand-rolled `std::vector`.
-
-
-## Requirements
-- C++17
-- header-only, just include `vector.h`
-
 
 ## Features
 
 - works with any type
-- grows automatically on "push_back" (doubles capacity)
-- "Iterator" and "ConstIterator" - range-based for works fine
-- bounds checking - "operator[]", "insert", "erase" throw "std::runtime_error"
-- prints via "<<" as "[1, 2...]"
-
-
+- grows automatically on `push_back` (doubles capacity)
+- `Iterator` and `ConstIterator` — range-based for works fine
+- bounds checking — `operator[]`, `insert`, `erase` throw `std::runtime_error`
+- prints via `<<` as `[1, 2, 3]`
 
 ## Usage
 
@@ -38,3 +30,9 @@ v.erase(v.begin() + 1);
 v.reserve(100);
 v.shrink_to_fit();
 ```
+
+## Requirements
+
+- C++17
+- header-only, just include `vector.h`
+
